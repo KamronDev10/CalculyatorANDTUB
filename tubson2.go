@@ -11,9 +11,6 @@ func main() {
 	fmt.Scan(&num1)
 	fmt.Print("Ikkinchi sonni kiriting: ")
 	fmt.Scan(&num2)
-	if num1 > num2 {
-		num1, num2 = num2, num1
-	}
 
 	fmt.Println(num1, "va", num2, "orasidagi tub sonlar:")
 	count := 0
@@ -24,7 +21,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("\nJami tub sonlar soni:", count)
+	fmt.Println("Jami tub sonlar soni:", count)
 }
 
 func isprime(num int) bool {
