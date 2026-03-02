@@ -1,20 +1,26 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	var n int
 
-	fmt.Print("Sonni kiriting: ")
-	_, err := fmt.Scan(&n)
+	fmt.Print("Son kiriting: ")
+
+	count, err := fmt.Scan(&n)
+
 	if err != nil {
-		fmt.Println("togri son kiritng !")
+		fmt.Println("Xatolik yuz berdi:", err)
 		return
 	}
 
-	fmt.Println("2 dan", n, "gacha bo'lgan tub sonlar:")
+	fmt.Print(count)
+	fmt.Print(", Kiritilgan son: ")
+	fmt.Println(n)
+
+	fmt.Print("2 dan ")
+	fmt.Print(n)
+	fmt.Println(" gacha bo'lgan tub sonlar:")
 
 	for i := 2; i <= n; i++ {
 		if IsPrime(i) {
@@ -23,7 +29,6 @@ func main() {
 	}
 	fmt.Println()
 }
-
 func IsPrime(num int) bool {
 	if num < 2 {
 		return false
