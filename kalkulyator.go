@@ -14,12 +14,12 @@ func main() {
 		var num1, num2 float64
 
 		fmt.Print("Birinchi sonni kiriting: ")
-		_, err := fmt.Scan(&num1)
+		value, err := fmt.Scan(&num1)
 		if err != nil {
 			fmt.Println("Xato: Son kiriting!")
 			return
 		}
-
+		fmt.Println(value)
 		fmt.Print("Amalni kiriting (+, -, *, /) yoki 'q': ")
 		fmt.Scan(&operator)
 
