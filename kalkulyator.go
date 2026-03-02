@@ -8,7 +8,6 @@ import (
 func main() {
 	var operator string
 
-	fmt.Println("--- Go Terminal Kalkulyator ---")
 	fmt.Println("To'xtatish uchun amal o'rniga 'q' ni kiriting.")
 
 	for {
